@@ -1,0 +1,101 @@
+/* Body */
+body{
+    font-family: Roboto;
+}
+/* Bagian Navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand{
+    font-family: Oswald !important;
+    font-size: 32px;
+}
+.ssmdku{
+    color: #ffffff;
+}
+/* JumboTron */
+.jumbotron{
+    background-image: url(img/img_1.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 650px;
+    position: relative;
+}
+
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .display-4{
+    color: white;
+    margin-top: 180px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-family: Oswald !important;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span{
+    font-weight: 500;
+}
+
+/* Utility */
+.tombol{
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+.sosial-media{
+    color: white;
+}
+/* Bagian Footer */
+.footer-copyright{
+    background-color: black;
+    color: white;
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* For Dekstop*/
+@media (min-width: 992px){
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 15px;
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron{
+        background-image: url(img/img_1.jpg);
+        background-size: cover;
+        height: 650px;
+        margin-top: -75px;
+  }
+  .card-deck{
+      margin-bottom: 30px;
+  }
+}
